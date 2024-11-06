@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja na Szkolenie</title>
+</head>
+<body>
+    <h1>Rejestracja na Szkolenie</h1>
+    <form method="post">
+        <label for="imię">Imię:</label>
+        <input type="text" id="imię" name="imię" required><br><br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="numer_telefonu">Numer Telefonu:</label>
+        <input type="text" id="numer_telefonu" name="numer_telefonu" required><br><br>
+        <label for="id_szkolenie">Szkolenie:</label>
+        <select id="id_szkolenie" name="id_szkolenie" required>
+            {% for szkolenie in szkolenia %}
+                <option value="{{ szkolenie.id }}">{{ szkolenie.tytuł_szkolenia }}</option>
+            {% endfor %}
+        </select><br><br>
+        <button type="submit">Zarejestruj się</button>
+    </form>
+    <a href="{{ url_for('index') }}">Powrót do listy szkoleń</a>
+</body>
+</html>
