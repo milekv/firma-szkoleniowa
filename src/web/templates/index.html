@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkolenia</title>
+</head>
+<body>
+    <h1>Lista Szkoleń</h1>
+    <ul>
+        {% for szkolenie in szkolenia %}
+            <li>{{ szkolenie.tytuł_szkolenia }} - {{ szkolenie.data_rozpoczęcia }} do {{ szkolenie.data_zakończenia }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('rejestracja') }}">Zarejestruj się na szkolenie</a>
+</body>
+</html>
