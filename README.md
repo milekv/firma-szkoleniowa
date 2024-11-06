@@ -9,20 +9,8 @@ Projekt ma na celu ułatwienie zarządzania szkoleniami i kursami, poprawę obs�
 - `src/web/`: Pliki aplikacji webowej (app.py, templates)
 
 ## Instalacja
-1. Sklonuj repozytorium:
+Sklonuj repozytorium:
    ```sh
    git clone https://github.com/milekv/firma-szkoleniowa.git
 
-   Zainstaluj wymagane pakiety:
-
--  pip install flask flask_sqlalchemy mysql-connector-python
-
-Skonfiguruj bazy danych:
-
-Edytuj plik src/web/app.py i ustaw parametry połączenia z bazą danych.
-
-Uruchom serwer Flask:
--  python src/web/app.py
-
-Otwórz przeglądarkę i przejdź do adresu - ` http://127.0.0.1:5000/.
 
