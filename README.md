@@ -15,14 +15,14 @@ Projekt ma na celu ułatwienie zarządzania szkoleniami i kursami, poprawę obs�
 
    Zainstaluj wymagane pakiety:
 
-- ` pip install flask flask_sqlalchemy mysql-connector-python
+-  pip install flask flask_sqlalchemy mysql-connector-python
 
 Skonfiguruj bazy danych:
 
 Edytuj plik src/web/app.py i ustaw parametry połączenia z bazą danych.
 
 Uruchom serwer Flask:
-- ` python src/web/app.py
+-  python src/web/app.py
 
 Otwórz przeglądarkę i przejdź do adresu - ` http://127.0.0.1:5000/.
 
