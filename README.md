@@ -9,8 +9,6 @@ Projekt ma na celu ułatwienie zarządzania szkoleniami i kursami, poprawę obs�
 - `src/web/`: Pliki aplikacji webowej (app.py, templates)
 
 ## Instalacja
-Sklonuj repozytorium:
-   ```sh
    git clone https://github.com/milekv/firma-szkoleniowa.git
 
 
