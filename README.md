@@ -8,7 +8,4 @@ Projekt ma na celu ułatwienie zarządzania szkoleniami i kursami, poprawę obs�
 - `src/db/`: Pliki bazy danych (schema, queries, procedures, triggers)
 - `src/web/`: Pliki aplikacji webowej (app.py, templates)
 
-## Instalacja
-   git clone https://github.com/milekv/firma-szkoleniowa.git
-
 
