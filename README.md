@@ -1,4 +1,3 @@
-# firma-szkoleniowa
 # Zarządzanie Szkoleniami w Firmie 
 
 ## Opis Projektu
