@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
@@ -34,16 +34,37 @@ body {
     padding: 60px 20px;
     background: linear-gradient(135deg, #007bff, #00c3ff);
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
 }
 
 .hero-section h1 {
     font-size: 3rem;
+    margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
 }
 
 .hero-section p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-section a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section a:hover {
+    background-color: #0056b3;
+    color: white;
 }
 
 .training-list {
@@ -60,30 +81,12 @@ body {
     margin: 15px;
     padding: 20px;
     width: 300px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -93,7 +96,7 @@ footer {
     padding: 40px;
     max-width: 500px;
     width: 100%;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .title {
@@ -107,9 +110,10 @@ label {
     font-size: 1.1rem;
     margin-bottom: 8px;
     display: block;
+    color: #333;
 }
 
-input, select {
+input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -117,10 +121,12 @@ input, select {
     border: 1px solid #ddd;
     font-size: 1rem;
     box-sizing: border-box;
+    background-color: #fafafa;
 }
 
-input[type="tel"], input[type="email"], input[type="text"] {
-    background-color: #fafafa;
+textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 button {
@@ -154,21 +160,24 @@ button:hover {
 .back-link a:hover {
     color: #0056b3;
 }
-.centered-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh; 
-    margin: 0 auto; 
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 500px;
-    width: 100%;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
 
 @media (max-width: 768px) {
     .container {
@@ -176,5 +185,11 @@ button:hover {
     }
     .title {
         font-size: 1.8rem;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
     }
 }
