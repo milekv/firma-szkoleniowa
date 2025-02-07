@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
@@ -34,37 +34,16 @@ body {
     padding: 60px 20px;
     background: linear-gradient(135deg, #007bff, #00c3ff);
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
 }
 
 .hero-section h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
 }
 
 .hero-section p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-section a {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #333;
-    background-color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.hero-section a:hover {
-    background-color: #0056b3;
-    color: white;
+    margin-top: 10px;
 }
 
 .training-list {
@@ -81,85 +60,13 @@ body {
     margin: 15px;
     padding: 20px;
     width: 300px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 500px;
-    width: 100%;
-    margin: 20px auto;
-}
-
-.title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #007bff;
-}
-
-label {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    display: block;
-    color: #333;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-    box-sizing: border-box;
-    background-color: #fafafa;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.back-link {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.back-link a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.back-link a:hover {
-    color: #0056b3;
-}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -177,20 +84,4 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
-    }
-    .title {
-        font-size: 1.8rem;
-    }
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-    .hero-section p {
-        font-size: 1rem;
-    }
-}
-
+} 
