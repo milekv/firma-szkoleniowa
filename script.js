@@ -56,10 +56,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const szkolenia = [
-        { tytul: "Programowanie w Python", data: "10-12 Marca 2024" },
-        { tytul: "UX/UI Design", data: "5-7 Kwietnia 2024" },
-        { tytul: "Marketing Cyfrowy", data: "15-17 Maja 2024" },
-    ];
+    { 
+        tytul: "Zarządzanie Czasem i Produktywność", 
+        data: "25-27 Marca 2025", 
+        opis: "Poznaj skuteczne techniki zarządzania czasem, które pomogą Ci zwiększyć produktywność w pracy i życiu osobistym." 
+    },
+    { 
+        tytul: "Komunikacja i Rozwiązywanie Konfliktów", 
+        data: "10-12 Kwietnia 2025", 
+        opis: "Rozwijaj umiejętności komunikacyjne i ucz się, jak efektywnie rozwiązywać konflikty w różnych środowiskach." 
+    },
+    { 
+        tytul: "Motywacja i Rozwój Osobisty", 
+        data: "1-3 Maja 2025", 
+        opis: "Zdobądź narzędzia i techniki, które pomogą Ci utrzymać wysoką motywację oraz rozwijać się w różnych aspektach życia." 
+    },
+];
+
 
     const szkoleniaContainer = document.querySelector("#szkolenia-container");
     if (szkoleniaContainer) {
