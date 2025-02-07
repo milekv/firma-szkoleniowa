@@ -1,4 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("registration-form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); 
+
+        const imie = document.getElementById("imie").value.trim();
+        const nazwisko = document.getElementById("nazwisko").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const telefon = document.getElementById("numer_telefonu").value.trim();
+        const szkolenie = document.getElementById("szkolenie").value;
+
+        if (imie === "" || nazwisko === "" || email === "" || telefon === "") {
+            alert("Wszystkie pola są wymagane!");
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            alert("Podaj poprawny adres email!");
+            return;
+        }
+
+        alert(`Dziękujemy za rejestrację, ${imie} ${nazwisko}!`);
+        form.reset(); 
+    });
+
+    function validateEmail(email) {
+        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return re.test(email);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     console.log("Strona załadowana!");
 
     const sections = document.querySelectorAll(".scroll-reveal");
