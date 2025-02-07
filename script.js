@@ -55,34 +55,43 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    const szkolenia = [
+const szkolenia = [
     { 
         tytul: "Zarządzanie Czasem i Produktywność", 
         data: "25-27 Marca 2025", 
-        opis: "Poznaj skuteczne techniki zarządzania czasem, które pomogą Ci zwiększyć produktywność w pracy i życiu osobistym." 
-    },{ 
+        opis: "Poznaj skuteczne techniki zarządzania czasem, które pomogą Ci zwiększyć produktywność w pracy i życiu osobistym.", 
+        link: "https://www.youtube.com/watch?v=wgDRkDzW_ow"
+    },
+    { 
         tytul: "Komunikacja i Rozwiązywanie Konfliktów", 
         data: "10-12 Kwietnia 2025", 
-        opis: "Rozwijaj umiejętności komunikacyjne i ucz się, jak efektywnie rozwiązywać konflikty w różnych środowiskach." 
-    },{ 
+        opis: "Rozwijaj umiejętności komunikacyjne i ucz się, jak efektywnie rozwiązywać konflikty w różnych środowiskach.", 
+        link: "https://www.youtube.com/watch?v=wgDRkDzW_ow"
+    },
+    { 
         tytul: "Motywacja i Rozwój Osobisty", 
         data: "1-3 Maja 2025", 
-        opis: "Zdobądź narzędzia i techniki, które pomogą Ci utrzymać wysoką motywację oraz rozwijać się w różnych aspektach życia." 
+        opis: "Zdobądź narzędzia i techniki, które pomogą Ci utrzymać wysoką motywację oraz rozwijać się w różnych aspektach życia.", 
+        link: "https://www.youtube.com/watch?v=wgDRkDzW_ow"
     },
 ];
 
+const szkoleniaContainer = document.querySelector("#szkolenia-container");
 
-    const szkoleniaContainer = document.querySelector("#szkolenia-container");
-    if (szkoleniaContainer) {
-        szkolenia.forEach((szkolenie) => {
-            const div = document.createElement("div");
-            div.classList.add("card");
-            div.innerHTML = `
-                <h3>${szkolenie.tytul}</h3>
-                <p><strong>Data:</strong> ${szkolenie.data}</p>
+if (szkoleniaContainer) {
+    szkolenia.forEach((szkolenie) => {
+        const div = document.createElement("div");
+        div.classList.add("card");
+        div.innerHTML = `
+            <h3>${szkolenie.tytul}</h3>
+            <p><strong>Data:</strong> ${szkolenie.data}</p>
+            <p>${szkolenie.opis}</p>
+            <a href="${szkolenie.link}" target="_blank">
                 <button class="btn btn-primary">Zapisz się</button>
-            `;
-            szkoleniaContainer.appendChild(div);
-        });
-    }
+            </a>
+        `;
+        szkoleniaContainer.appendChild(div);
+    });
+}
+
 });
