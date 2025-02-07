@@ -1,4 +1,3 @@
-/* Podstawowe style globalne */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Nawigacja */
 .navbar {
     background: linear-gradient(135deg, #007bff, #0056b3);
     padding: 15px 20px;
@@ -31,7 +29,6 @@ body {
     color: #ffcc00;
 }
 
-/* Sekcja Hero (index.html) */
 .hero-section {
     text-align: center;
     padding: 60px 20px;
@@ -70,92 +67,6 @@ body {
     color: white;
 }
 
-/* Kontener formularza */
-.container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 500px;
-    width: 100%;
-    margin: 20px auto;
-}
-
-.title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #007bff;
-}
-
-label {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    display: block;
-    color: #333;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-    box-sizing: border-box;
-    background-color: #fafafa;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.back-link {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.back-link a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.back-link a:hover {
-    color: #0056b3;
-}
-
-/* Animacja fadeIn */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Sekcja szkolenia */
 .training-list {
     display: flex;
     flex-wrap: wrap;
@@ -178,7 +89,6 @@ button:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Stopka */
 footer {
     text-align: center;
     background: #333;
@@ -187,14 +97,9 @@ footer {
     margin-top: 30px;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .container {
         padding: 20px;
-    }
-
-    .title {
-        font-size: 1.8rem;
     }
 
     .hero-section h1 {
@@ -205,7 +110,3 @@ footer {
         font-size: 1rem;
     }
 }
-
-
-
-
