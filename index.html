@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            height: 200px; 
+            object-fit: cover; 
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,17 +40,15 @@
         </div>
     </section>
 
-    <!-- Sekcja Lista Szkoleń -->
     <div class="container my-5">
         <h2 class="text-center mb-4">Lista Szkoleń</h2>
-        <hr class="mb-4"> <!-- Dodany margines dolny dla linii -->
+        <hr class="mb-4">
         
-        <!-- Dodajemy kontener dla szkolenia -->
         <div class="row" id="szkolenia-container">
-            <!-- Przykładowe szkolenia (możesz je wypełnić dynamicznie za pomocą JavaScript) -->
+         
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="szkolenie1.jpg" class="card-img-top" alt="Szkolenie 1">
+                    <img src="https://www.itselect.pl/wp-content/uploads/2019/08/python.jpg" class="card-img-top" alt="Programowanie w Python">
                     <div class="card-body">
                         <h5 class="card-title">Programowanie w Python</h5>
                         <p class="card-text">Naucz się Pythona od podstaw i stań się ekspertem w programowaniu!</p>
@@ -52,9 +56,10 @@
                     </div>
                 </div>
             </div>
+         
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="szkolenie2.jpg" class="card-img-top" alt="Szkolenie 2">
+                    <img src="https://szkola-grafiki.pl/video/ux-video-bg.png" class="card-img-top" alt="UX/UI Design">
                     <div class="card-body">
                         <h5 class="card-title">UX/UI Design</h5>
                         <p class="card-text">Poznaj podstawy projektowania UX/UI i twórz przyjazne dla użytkownika aplikacje.</p>
@@ -62,9 +67,10 @@
                     </div>
                 </div>
             </div>
+           
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="szkolenie3.jpg" class="card-img-top" alt="Szkolenie 3">
+                    <img src="https://mg-edu.pl/wp-content/uploads/2023/11/digital-marketing_1.webp" class="card-img-top" alt="Marketing Cyfrowy">
                     <div class="card-body">
                         <h5 class="card-title">Marketing Cyfrowy</h5>
                         <p class="card-text">Zdobądź umiejętności w zakresie marketingu internetowego i reklamy online.</p>
